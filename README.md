@@ -1,6 +1,6 @@
-# Web-Tech-441
+# 441_Work
 
 Homework repository for MART 441
 
-Base URL for my site:
-https://lawlessofcourse.github.io/Web-Tech-441/
+Base URL for site:
+https://michaelcassens.github.io/441_Work/
