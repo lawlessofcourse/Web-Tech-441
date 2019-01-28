@@ -3,4 +3,4 @@
 Homework repository for MART 441
 
 Base URL for site:
-https://michaelcassens.github.io/441_Work/
+https://lawlessofcourse.github.io/Web-Tech-441/
