@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Accessing the DOM</title>
+
+        <script>
+          function greetingTime(){
+            var today = new Date();
+            var hourNow = today.getHours();
+            var greeting;
+
+            if(hourNow>18){
+              greeting = 'Good evening';
+            } else if(hourNow > 12) {
+              greeting = 'Good afternoon';
+            } else if(hourNow > 0){
+              greeting = 'Good morning';
+            }else {
+              greeting = 'Welcome';
+            }
+            document.write(greeting);
+          }
+          function changeImage(){
+            document.body.style.backgroundImage = "url('./imgs/carve.jpg')";
+          }
+        </script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+      <div class="hero">
+        <div class="title">
+
+        <script>
+          greetingTime();
+
+        </script>
+        <p id = "demo" onclick="changeImage()">Time to Adventure</p>
+        </div>
+      </div>
+    </body>
+</html>

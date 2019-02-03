@@ -1,0 +1,43 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("./imgs/mountain_top.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero {
+    /* the 'vh' unit asks the browser to */
+    /* return the height of the viewport */
+    /* we can then use that to set the height of an element */
+    /* as a percentage of the viewport height (vh) */
+    height: 100vh;
+    min-height: 740px;
+    margin: auto;
+    background-image: url("imgs/");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.hero .title {
+    font-size: 22pt;
+    color: #fff;
+    float: inherit;
+    min-height: inherit;
+    margin-top: 170px;
+    margin-left: 6em;
+    margin-right: 6em;
+    padding: 2em;
+    text-align: center;
+    background-image: url("imgs/");
+    background-position: center;
+    background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.title h1 {
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+}
