@@ -24,6 +24,20 @@
           function changeImage(){
             document.body.style.backgroundImage = "url('./imgs/carve.jpg')";
           }
+          function adventureTime(){
+            var cliffDrop = confirm("Go right to go down the black diamond trial that leads to a gnarly drop.");
+
+            if(cliffDrop == true){
+              alert("You're at the top of a cliff drop you don't know how far it is..");
+              var sendIt = confirm("Send it!");
+              if(sendIt == true){
+                  alert("You fell 40 feet and ate it hard.. ski patrol are on the way");
+              }
+              else{
+                alert("You found a sweet ride around the cliff side and you're happy you did. The cliff seems to be around 40 feet!");
+              }
+            }
+          }
         </script>
         <link rel="stylesheet" href="./style.css">
     </head>
@@ -34,7 +48,7 @@
 
         <script>
           greetingTime();
-
+          adventureTime();
         </script>
         <p id = "demo" onclick="changeImage()">Time to Adventure</p>
         </div>
