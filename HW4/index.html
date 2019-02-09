@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Accessing the DOM</title>
+
+        <script>
+
+          function getChoice1(){
+            var myChoice = document.getElementById("choice").value;
+
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "Left")
+            {
+              document.getElementById("choice").style.display="none";
+              document.getElementById("btnSubmit").style.display="none";
+
+              document.getElementById("choice2").style.display="inline";
+              document.getElementById("btnSubmit2").style.display="inline";
+
+              myQuestion.innerHTML = "You chose to go left, you ride some fresh snow for awhile until you come up to the cliff drop you heard about. Play it safe and go around the cliff or ... Send it!";
+            }
+            else if(myChoice === "Right")
+            {
+              myQuestion.innerHTML = "You chose to go right, you take your favorite way down and get fresh tracks all the way. "
+
+            }else{
+              myQuestion.innerHTML = "Invalid answer";
+            }
+          }
+          function getChoice2(){
+            var myChoice2 = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice2 === "Send it")
+            {
+
+              myQuestion.innerHTML = "You sent it! You ate it hard but your friend was there recording it to make sure you made it on Jerry of the day. Ski patrol are on the way."
+
+            }
+            else if(myChoice2 === "Play it safe")
+            {
+              myQuestion.innerHTML = "You chose to go right, you found a new favorite way down and get fresh tracks all the way."
+            }
+          }
+        </script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+      <div class="hero">
+        <div class="title">
+        <h1>Mountain Adventure</h1>
+
+        <br>
+        <div id="question">
+          You're at the top of a moutain on your snowboard. You have a few options.
+          <br>
+         You can take the safe way down, the way you know which is off to the right.
+         <br>
+         Off to the left is unknown but you heard about a cool cliff drop that way.</p>
+        </div>
+        <br>
+
+        <input id="choice" type="text" value="Enter Left or Right">
+        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+        <input id="choice2" type="text" value="Enter Play it safe or Send it" style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();" style="display:none">Click to continue</button>
+
+        </div>
+      </div>
+    </body>
+</html>
