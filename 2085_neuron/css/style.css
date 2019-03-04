@@ -280,12 +280,12 @@ a:hover, a:active, a:focus {
 }
 
 .main-home {
-  background: url('../images/home-bg.jpg') no-repeat;
+  background: url('../images2/home-bg.jpg') no-repeat;
   height: 100vh;
 }
 
 .main-about {
-  background: url('../images/about-bg.jpg') no-repeat;
+  background: url('../images2/about_bg.jpg') no-repeat;
 }
 
 .main-single-post {
