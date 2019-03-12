@@ -1,0 +1,45 @@
+
+#imgId{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+
+  }
+   #square {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+    }
+    #move{
+      position: absolute;
+      display: block;
+      margin-left: 50%;
+      margin-right: 50%;
+      padding: 5px;
+    }
+    .imgs{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+       margin-top: auto;
+       width: 50%;
+       height: auto;
+    }
+
+    .stuff{
+      background: blue;
+    }
+
+    #third{
+      background: green;
+    }
+
+    body{
+        background-color: black;
+    }
