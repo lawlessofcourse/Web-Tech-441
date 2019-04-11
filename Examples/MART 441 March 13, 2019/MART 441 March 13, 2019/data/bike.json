@@ -1,0 +1,11 @@
+{
+               "title" : "Rick and Morty",
+               "type" : "Animation",
+               "genre" : ["Comedy", "Adventure", "Science-Fiction"],
+               "episodes" : [
+                   "Pilot",
+                   "Lawnmower Dog",
+                   "Anatomy Park",
+                   "M. Night Shaym-Aliens!"
+               ]
+           }

@@ -1,0 +1,71 @@
+{
+  "title" : "Rick and Morty",
+  "type": "Animation",
+  "genre" : ["Comedy", "Adventure", "Science-Fiction"],
+  "episodes" : [
+    {
+      "name" :	"Pilot",
+      "season":	1,
+      "number":	1,
+      "summary" :	"Rick takes Morty to another dimension to get some seeds for him but Morty's parents are considering to put Rick in a retirement home for keeping Morty away from school to help him in his lab.",
+    },
+    {
+      "name" :	"Lawnmower Dog",
+      "season":	1,
+      "number":	2,
+      "summary" :	"Morty's small, white dog Snuffles gets on the nerves of the family, so Rick quickly builds a knowledge enhancing helmet for the dog. In the meantime, Rick and Morty decide to incept the dreams of Morty's math teacher, Mr. Goldenfold in order to convince him to give Morty A's in math. While the duo are sent on an epic dream world journey, Snuffles slowly gains sentience, which leads to a slew of even more problems.",
+    },
+    {
+      "name" :	"Anatomy Park",
+      "season":	1,
+      "number":	3,
+      "summary" :	"It's around Christmas time and Jerry's parents are coming to visit so he wants everybody to have a normal holiday without technology and without Rick. Fortunately for him, Rick has other plans, involving building a molecular theme park inside of a friend of his named Ruben, and he shrinks down Morty and sends him in there to test it out..",
+    },
+    {
+      "name" :	"M. Night Shaym-Aliens!",
+      "season":	1,
+      "number":	4,
+      "summary" :	"Rick and Morty try to get to the bottom of a mystery in this M. Night Shyamalan style twistaroony of an episode.",
+    },
+    {
+      "name" :	"Meeseeks and Destroy",
+      "season":	1,
+      "number":	5,
+      "summary" :	"Rick provides the family with a solution to their problems, freeing him up to go on an adventure led by Morty. Sounds good, better record this one, broh!",
+    },
+    {
+      "name" :	"Rick Potion #9",
+      "season":	1,
+      "number":	6,
+      "summary" :	"Rick provides Morty with a love potion to get Jessica. The serum backfires &amp; Rick's attempt to fix things creates Cronenberg inspired monsters. Rick is okay with it but Morty feels partly responsible for creating a living nightmare.",
+    },
+    {
+      "name" :	"Raising Gazorpazorp",
+      "season":	1,
+      "number":	7,
+      "summary" :	"Morty convinces Rick to buy him a sexy robot. Guess what tho? Trouble happens, dog.",
+    },
+    {
+      "name" :	"Rixty Minutes",
+      "season":	1,
+      "number":	8,
+      "summary" :	"When Rick hooks up the family's tv receiver with reality-tv shows from alternate dimensions, and allows them to see themselves in different versions of their lives, they begin to wonder what they have, and more importantly - what could have been.",
+    },
+    {
+      "name" : "Something Ricked This Way Comes"	,
+      "season":	1,
+      "number":	9,
+      "summary" : "Rick goes to battle with the devil, and Summer gets upset about it, broh. Plus Jerry and Morty hang out, broh!",
+    },
+    {
+      "name" : "Close Rick-Counters of the Rick Kind"	,
+      "season":	1,
+      "number":	10,
+      "summary" : "Rick has a run in with some old associates, resulting in a fallout with Morty. You got any chips, broh?",
+    },
+    {
+      "name" : "Ricksy Business",
+      "season":	1,
+      "number": 11,
+      "summary" : "Beth and Jerry head for an iceberg of a date leaving Rick in charge. Morty doesn't get to go on any more adventures if the house isn't in the same condition when they get back.",
+    },
