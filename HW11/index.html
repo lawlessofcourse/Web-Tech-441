@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <title>Canvas</title>
+</head>
+<style>
+  #myCanvas {
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+
+  }
+</style>
+
+<body>
+  <canvas id="myCanvas" height="600" width="800"></canvas>
+
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var x = 50;
+    var y = 50;
+    ctx.fillStyle = "#0000FF";
+    drawSquare();
+
+    function drawSquare() {
+      ctx.clearRect(0, 0, 800, 600);
+      ctx.fillRect(x, y, 20, 20);
+    }
+    $(document).ready(function() {
+      $(this).keypress(function(event) {
+        getKey(event);
+      });
+    });
+
+    function getKey(event) {
+      var char = event.which || event.keyCode;
+      var actualLetter = String.fromCharCode(char);
+      if (actualLetter == "w") {
+        moveUp();
+      }
+      drawSquare();
+    }
+
+    function moveUp() {
+      y -= 10;
+    }
+  </script>
+</body>
+
+</html>

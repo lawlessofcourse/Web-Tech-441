@@ -6,7 +6,9 @@
 }
 button{
 	display: block;
-	margin: auto;
+
+	position: absolute;
+
 
 	margin-top: 20%;
 }

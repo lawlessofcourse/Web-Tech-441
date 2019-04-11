@@ -4,49 +4,18 @@
 <head>
   <script src="libs/jquery-3.3.1.min.js"></script>
   <script src="scripts/jsonajax.js"></script>
-  <script>
-    (function($) {
-      $.fn.bgImage = function() {
-        this.css("background-image", "url('./images/RickandMorty.jpg')");
-        this.css("background-position", "center");
-        this.css("background-size", "fit");
-        this.css("background-repeat", "repeat");
-        return this;
-      };
-    }(jQuery));
-    $(function() {
-      $("button").click(function() {
-        $("body").bgImage().fadeIn("fast");
-      });
 
-    });
-  </script>
-  <script>
-    (function($) {
-      $.fn.blackbg = function() {
-        this.css("background-color", "black");
-        this.css("color", "white");
-        this.css("font-size", 24);
-        this.css("text-align", "center");
-        this.css("background-blend-mode", "overlay");
-        this.css("opacity", "0.75" );
-        return this;
-      };
-    }(jQuery));
-    $(function() {
-      $("button").click(function() {
-        $("div").blackbg().fadeIn("slow");
-      });
 
-    });
-  </script>
   <link rel="stylesheet" href="./libs/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./styles/styles0.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <body>
-<button id="btnSubmit">Rick and Morty!</button>
+  <div class="mx-auto" style="width: 200px;">
+    <button id="btnSubmit" >Rick and Morty!</button>
+  </div>
+
   <div class="container" id="showInfo">
 
   </div>
