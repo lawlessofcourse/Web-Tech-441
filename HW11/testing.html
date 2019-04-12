@@ -1,0 +1,156 @@
+<html>
+
+<head>
+  <title>Canvas</title>
+</head>
+<style>
+  #myCanvas {
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    background-color: hsl(200, 100%, 100%);
+  }
+
+  canvas {
+    background-color: hsl(200, 100%, 100%);
+  }
+</style>
+<script src="libs/jquery-3.3.1.min.js"></script>
+
+<body>
+  <canvas id="myCanvas" height="600" width="800"></canvas>
+
+  <script>
+    class Square {
+      constructor(x, y, width, height) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+      }
+    }
+
+    let object1 = new Square(200, 200, 100, 100);
+    let object2 = new Square(10, 10, 10, 10);
+    let speedy = 3;
+    let speedx = 2;
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    let hue = [];
+    let sat = '200, ';
+    let blk = '200';
+    //var x = 50;
+    //var y = 50;
+    ctx.fillStyle = "#0000FF";
+    setInterval(update, 1000 / 60);
+    drawSquare();
+
+    function colorCounter() {
+      //colorMode(HSB);
+      let c = 'hsl(';
+      let h = '';
+      for (i = 0; i < 360; i++) {
+        hue.push(i);
+        h = hue[i];
+        c = 'hsl(' + h + ', ' + sat + blk + ')';
+      }
+
+      return c;
+    }
+
+    function setRandomColor() {
+
+    }
+
+    function update() {
+      //bounds for object1
+      if (object1.x <= 0) {
+        object1.x = 0;
+      }
+      if (object1.x + object1.width >= 800) {
+        object1.x = 800 - object1.width;
+      }
+      if (object1.y <= 0) {
+        object1.y = 0;
+      }
+      if (object1.y + object1.height >= 600) {
+        object1.y = 600 - object1.height;
+      }
+
+      object2.y += speedy;
+      object2.x += speedx;
+      if (object2.y > 600 || object2.y < 0) {
+        speedy *= -1;
+      } else if (object2.x > 800 || object2.x < 0) {
+        speedx *= -1;
+      }
+      if (hasCollided(object1, object2)) {
+        speedy *= -1;
+        speedx *= -1;
+        object1.width *= 0.95;
+        object1.height *= 0.95;
+        object2.width *= 1.15;
+        object2.height *= 1.15;
+        $("canvas").css("background-color", colorCounter());
+      }
+
+      drawSquare();
+    }
+
+    function hasCollided(object1, object2) {
+      return !(
+        ((object1.y + object1.height) < (object2.y)) ||
+        (object1.y > (object2.y + object2.height)) ||
+        ((object1.x + object1.width) < object2.x) ||
+        (object1.x > (object2.x + object2.width))
+      );
+    }
+
+    $(document).ready(function() {
+      $("canvas").css("background-color", colorCounter());
+      console.log(colorCounter());
+      $(this).keypress(function(event) {
+        getKey(event);
+      });
+    });
+
+    function getKey(event) {
+      var char = event.which || event.keyCode;
+      var actualLetter = String.fromCharCode(char);
+      if (actualLetter == "w") {
+        moveUp();
+      } else if (actualLetter == "a") {
+        moveLeft();
+      } else if (actualLetter == "d") {
+        moveRight();
+      } else if (actualLetter == "s") {
+        moveDown();
+      }
+      drawSquare();
+    }
+
+    function moveUp() {
+      object1.y -= 5;
+    }
+
+    function moveDown() {
+      object1.y += 5;
+    }
+
+    function moveRight() {
+      object1.x += 5;
+    }
+
+    function moveLeft() {
+      object1.x -= 5;
+    }
+
+    function drawSquare() {
+      ctx.clearRect(0, 0, 800, 600);
+      ctx.fillRect(object1.x, object1.y, object1.width, object1.height);
+      ctx.fillRect(object2.x, object2.y, object2.width, object2.height);
+    }
+  </script>
+</body>
+
+</html>

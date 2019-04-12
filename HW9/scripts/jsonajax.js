@@ -10,6 +10,7 @@ var der;
     return this;
   };
 }(jQuery));
+
 (function($) {
   $.fn.bgImage = function() {
     this.css("background-image", "url('./images/RickandMorty.jpg')");
@@ -19,6 +20,7 @@ var der;
     return this;
   };
 }(jQuery));
+
 $(document).ready(function() {
   $("button").click(function() {
     $("body").bgImage().fadeIn("fast");
@@ -43,14 +45,14 @@ function objectCheck(data) {
     }
     if (key === 'name') {
       //  objectCheck(val);
-      result += val +"<br>";
+      result += val + "<br>";
     }
     if (key === 'summary') {
-      result += "Summary: "+ val + "<br>";
+      result += "Summary: " + val + "<br>";
       //$("#colThree").append("<br>" + "Summary:" + val);
     }
     if (key === 'season') {
-      result +="Season " + val + "<br>";
+      result += "Season " + val + "<br>";
     }
     if (key === 'number') {
       result += "Episode " + val + "<br>";
