@@ -1,9 +1,9 @@
 //create array that match image tags
 var imageId=["image1", "image2", "image3", "image4"];
 //create variable with the blank image
-var blankImagePath = "/images/flowers.jpg";
+var blankImagePath = "./images/flowers.jpg";
 //create empty array for non-empty images
-var showImages = new Array();
+var actualImages = new Array();
 var numberOne = -1;
 var numberTwo = -1;
 
@@ -23,16 +23,16 @@ function printBlanks()
 function createRandomImageArray()
 {
   //create array of images
-  var imagePath = ["/images/mountain.jpg", "/images/footprints.jpg"];
+  var imagePath = ["images/mountain.jpg", "images/footprints.jpg", "images/flowers.jpg"];
   //create another array to make sure the images only get added twice
-  var count = [0,0];
+  var count = [0,0,0];
   //create a while statement to check to see if our actual image array is full
   while(actualImages.length < 4)
   {
     //get a random number between 0 and the total number of images that we can choose from
     var randomNumber = Math.floor(Math.random() * imagePath.length);
     //create an if statement that says if the total number added is less than 2, then add the image to the actual array
-    if(count[randomNumber]<2)
+    if(count[randomNumber]<4)
     {
       actualImages.push(actualImagePath[randomNumber]);
       //add one to the array that makes sure only two images can be added
