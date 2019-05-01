@@ -1,0 +1,195 @@
+body{
+  min-width: inherit;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+.navbar {
+  /* margin-bottom: 0; */
+  border-radius: 0;
+
+}
+.navbar-brand{
+  padding: 3em;
+  width: 25vh;
+  height: 10vh;
+  background: url("../imgs/LV/LAWLESS_VISUALS_v2.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.col-centered{
+  margin: 0 auto;
+}
+.navbar li{
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.nav{
+  display: block;
+  margin: auto;
+}
+.hero{
+  height: 100%;
+  min-height: 740px;
+  margin: auto;
+  margin-left: 1em;
+  margin-right: 1em;
+  background:radial-gradient(rgba(0, 4, 92, 0.5), rgba(49, 0, 79, 0.5)), url("../imgs/LV/LAWLESS_VISUALS.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .8);
+}
+.hero .title {
+  font-size: 22pt;
+  color: #252525;
+  float: inherit;
+  margin-top: 1em;
+  margin-left: 6em;
+  margin-right: 6em;
+  padding: 2em;
+  text-align: center;
+  padding-top: 6em;
+}
+.title h1 {
+  font-family: 'VT323', monospace;
+  font-size: 2.5em;
+  letter-spacing: 0.2em;
+}
+
+.title h2 {
+  font-family: 'VT323', monospace;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 0.5em;
+}
+.container-fluid{
+
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row {
+  height: 20vh;
+  margin-left: 6em;
+  margin-right: 6em;
+  display: block;
+}
+.col-sm-4:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  -moz-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+/* Set gray background color and 100% height */
+
+.container-fluid .photos{
+  background: lightblue;
+}
+.lawless_visuals{
+  background: black;
+}
+.other{
+  background: red;
+}
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+.btn{
+  margin:auto;
+  display: block;
+
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}
+/* body, html{
+  height: 100%;
+}
+.btn{
+  position: relative;
+  margin-left: 90%;
+  margin-top: 0;
+  background-color: "black";
+}
+.navbar-default {
+    background: #ffffff;
+    margin: 0 !important;
+    padding: 18px 0;
+    display: none;
+}
+
+.navbar-default .navbar-brand {
+  color: #555;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #777;
+    font-size: 16px;
+    letter-spacing: 1px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    padding-right: 22px;
+    padding-left: 22px;
+}
+
+.navbar-default .navbar-nav > li a:hover {
+    color: #bfba55 !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #606066;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav li a:hover,
+ .navbar-default .navbar-nav .active > a {
+    color: #bfba55;
+  }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #bfba55;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+     border: none;
+     padding-top: 10px;
+  }
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #bfba55;
+    border-color: transparent;
+  }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.hero-image{
+  background-color: lightblue;
+  background-image: url("home-bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+} */

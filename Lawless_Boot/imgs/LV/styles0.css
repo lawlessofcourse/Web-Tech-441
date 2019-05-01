@@ -1,0 +1,14 @@
+.body{
+	background-image: url("../images/RickandMortyBG.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat;
+}
+button{
+	display: block;
+
+	position: absolute;
+
+
+	margin-top: 20%;
+}
