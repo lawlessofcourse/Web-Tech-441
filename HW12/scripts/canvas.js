@@ -25,14 +25,13 @@ $(document).ready(function(){
 
 function setup()
 {
-    //window.alert("Use your 'wasd' keys to move. Make it through the maze without hitting any of the black lines. The yellow circles are food!! They will increase your score by 1 each time. Hit the red box and you lose completely. Get to the gold square with a score of 3 or more and you win!!");
     canvas = document.getElementById("myCanvas");
     ctx = canvas.getContext("2d");
 
     // create two objects
-    square1 = new Square(100,100,50,50,"#00FF00");
-    square2 = new Square(680,450,30,30,"rgb(255, 0, 0)");
-    square3 = new Square(50,530,20,20,"rgb(212, 175, 55)");
+    square1 = new Square(100,100,50,50,"#00d9ff");
+    square2 = new Square(680,450,30,30,"rgb(0, 209, 255)");
+    square3 = new Square(50,530,20,20,"rgb(142, 110, 8)");
     //circle1 = new Circle()
 
     $.getJSON("data/collectables.json", function(data){
@@ -134,7 +133,7 @@ function getKey(event)
 
     if(win && score < 3)
     {
-      window.alert("you need more food to win! Go get some and come back!");
+      window.alert("You need more tokens!");
     }
 
     if(test2)
@@ -173,7 +172,7 @@ function livesEnd(){
 }
 
 function gameOver(){
-  window.alert("GAMEOVER! RESTART");
+  window.alert("GAMEOVER!");
   lives = 3;
   score = 0;
 //  square1 = new Square(100,100,50,50,"#00FF00");
@@ -181,11 +180,13 @@ function gameOver(){
 }
 
 function wonGame(){
-  window.alert("CONGRATS! YOU WON!! Click to restart :)");
+  window.alert("You Won! Click to restart");
   lives = 3;
   score = 0;
   //square1 = new Square(100,100,50,50,"#00FF00");
   setup();
+
+
 }
 
 function moveUp()
