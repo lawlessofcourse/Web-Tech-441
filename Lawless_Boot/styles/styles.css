@@ -1,19 +1,18 @@
 body{
   min-width: inherit;
-  max-width: 100%;
   display: block;
   margin: auto;
 }
 .navbar {
-  /* margin-bottom: 0; */
   border-radius: 0;
-
 }
 .navbar-brand{
-  padding: 3em;
+  padding: 1em;
   width: 25vh;
   height: 10vh;
-  background: url("../imgs/LV/LAWLESS_VISUALS_v2.jpg");
+  margin-left: 4em;
+  padding-left: 4em;
+  background: url("../imgs/LV/LV_asset.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -22,20 +21,16 @@ body{
 .col-centered{
   margin: 0 auto;
 }
-.navbar li{
-  padding-top: 3em;
-  padding-bottom: 3em;
-}
+
 .nav{
   display: block;
   margin: auto;
 }
 .hero{
-  height: 100%;
-  min-height: 740px;
+  max-width: 1920px;
+  max-height: 1080px;
+  min-height: 480px;
   margin: auto;
-  margin-left: 1em;
-  margin-right: 1em;
   background:radial-gradient(rgba(0, 4, 92, 0.5), rgba(49, 0, 79, 0.5)), url("../imgs/LV/LAWLESS_VISUALS.gif");
   background-position: center;
   background-repeat: no-repeat;
@@ -65,15 +60,20 @@ body{
   font-style: italic;
   line-height: 0.5em;
 }
-.container-fluid{
-
-}
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row {
   height: 20vh;
-  margin-left: 6em;
-  margin-right: 6em;
-  display: block;
+  margin-left: 3em;
+  margin-right: 3em;
+
+}
+.row h2{
+  text-align: center;
+  color: rgb(166, 255, 255);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .col-sm-4:hover{
   -ms-transform: scale(1.5); /* IE 9 */
@@ -83,15 +83,26 @@ body{
 }
 
 /* Set gray background color and 100% height */
-
-.container-fluid .photos{
-  background: lightblue;
+#animation{
+  height: 100%;
+  background: url("../imgs/Animation/LAWLESS_A8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .8);
+    display: absolute;
+    z-index: 0;
+    
 }
-.lawless_visuals{
-  background: black;
-}
-.other{
-  background: red;
+#photo{
+  height: 100%;
+  background: url("../imgs/Photography/mylar_jack.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .8);
+  display: absolute;
+  z-index: 0;
 }
 /* Set black background color, white text and some padding */
 footer {

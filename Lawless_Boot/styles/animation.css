@@ -1,0 +1,57 @@
+body{
+  min-width: inherit;
+  display: block;
+  margin: auto;
+}
+.navbar {
+  /* margin-bottom: 0; */
+  border-radius: 0;
+
+}
+.navbar-brand{
+  padding: 1em;
+  width: 25vh;
+  height: 10vh;
+  margin-left: 4em;
+  padding-left: 4em;
+  background: url("../imgs/LV/LV_asset.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.col-centered{
+  margin: 0 auto;
+}
+
+.nav{
+  display: block;
+  margin: auto;
+}
+.container iframe{
+  display: block;
+  margin: auto;
+
+}
+
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+.btn{
+  margin:auto;
+  display: block;
+
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}
