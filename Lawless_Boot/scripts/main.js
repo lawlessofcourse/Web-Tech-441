@@ -3,9 +3,9 @@ $(function () {
 
         });
         $(document).ready(function () {
-            $(".btn").click(function () {
-                $(".navbar-default").toggle();
+            $(".row img").hover(function () {
+                $(this).css("z-index", "1");
+                
             });
 
         });
-      

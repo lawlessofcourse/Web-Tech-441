@@ -2,6 +2,7 @@ body{
   min-width: inherit;
   display: block;
   margin: auto;
+  background: linear-gradient(to bottom right, rgb(0, 0, 0),rgba(122, 0, 198,0.7), rgb(0, 0, 0));
 }
 .navbar {
   /* margin-bottom: 0; */
@@ -12,13 +13,33 @@ body{
   padding: 1em;
   width: 25vh;
   height: 10vh;
-  margin-left: 4em;
+  margin-left: 1em;
+  margin
   padding-left: 4em;
   background: url("../imgs/LV/LV_asset.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
 
+}
+.navbar-right{
+  padding-top: 2em;
+}
+h1{
+
+font-family: 'VT323', monospace;
+color: white;
+font-size: 70px;
+
+}
+h2, h3{
+  font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+p{
+    font-family: 'Roboto Mono', monospace;
+
+  color: white;
 }
 .col-centered{
   margin: 0 auto;
@@ -33,7 +54,22 @@ body{
   margin: auto;
 
 }
-
+#gallery{
+  width: 80%;
+  min-width: 80%;
+  max-width: 100%;
+background: lightblue;
+}
+.row img:hover{
+  filter: grayscale(100%);
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  -moz-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.ani{
+  background: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+}
 
 /* Set black background color, white text and some padding */
 footer {

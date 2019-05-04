@@ -1,57 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Animation</title>
+  <title>Photography</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="libs/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="styles/photo.css">
   <script src="scripts/slideshow.js"> </script>
-  <link rel="stylesheet" href="styles/animation.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Code+Pro|VT323" rel="stylesheet">
+
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"></a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="index.html">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Interactive Systems</a></li>
+              <li><a href="#">Animation</a></li>
+              <li><a href="#">Photography</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Interactive Systems</a></li>
-            <li><a href="#">Animation</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Photography</a></li>
-          </ul>
-        </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
-      </ul>
+  </nav>
+<!-- LIGHTBOX how can I make this simple - how can I make it super easy to add new photos to the page. Can I do it mainly all in JS?-->
+<div class="container" id="gallery">
+  <h2 style="text-align:center">Mylar Experiment 2017</h2>
+
+  <div class="row">
+    <div class="column">
+      <img src="./imgs/Photography/mylar_boat.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="./imgs/Photography/mylar_jack.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="./imgs/Photography/mylar_mini.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="./imgs/Photography/mylar_roof.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="./imgs/Photography/mylar_trees.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="./imgs/Photography/mylar_ven.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
     </div>
   </div>
-</nav>
-
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
 </div>
+<br>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./imgs/Photography/mylar_boat.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./imgs/Photography/mylar_jack.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./imgs/Photography/mylar_mini.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./imgs/Photography/mylar_roof.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./imgs/Photography/mylar_trees.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./imgs/Photography/mylar_ven.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="./imgs/Photography/mylar_boat.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./imgs/Photography/mylar_jack.jpg" style="width:100%" onclick="currentSlide(2)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./imgs/Photography/mylar_mini.jpg" style="width:100%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./imgs/Photography/mylar_roof.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./imgs/Photography/mylar_trees.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./imgs/Photography/mylar_ven.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer class="container-fluid text-center">

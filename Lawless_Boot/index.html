@@ -10,41 +10,40 @@
   <script src="libs/jquery-3.3.1.min.js"></script>
   <script src="scripts/main.js"> </script>
   <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Code+Pro|VT323" rel="stylesheet">
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html"></a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="index.html">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Interactive Systems</a></li>
+              <li><a href="#">Animation</a></li>
+              <li><a href="#">Photography</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Interactive Systems</a></li>
-            <li><a href="#">Animation</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Photography</a></li>
-          </ul>
-        </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 <!-- Hero box -->
 <div class="container-fluid text-center">
   <div class="hero">
@@ -55,7 +54,7 @@
 <!-- More -->
 </div>
 <div class="container text-center">
-  <h3>What is Lawless Visuals?</h3><br>
+  <h3>Explore Lawless Visuals</h3><br>
   <div class="row">
     <a href="animation.html"><div class="col-sm-4" id="animation">
       <h2>Animation</h2>
@@ -65,7 +64,7 @@
       <h2>Photography</h2>
     </div></a>
     <div class="col-sm-4" id="allProjects">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <img src="" class="img-responsive" style="width:100%" alt="Image">
       <p>See all Projects</p>
     </div>
   </div>
