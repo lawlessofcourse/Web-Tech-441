@@ -24,6 +24,22 @@ body{
 .navbar-right{
   padding-top: 2em;
 }
+h1{
+
+font-family: 'VT323', monospace;
+color: white;
+font-size: 70px;
+
+}
+h2, h3{
+  font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+p{
+    font-family: 'Roboto Mono', monospace;
+
+  color: white;
+}
 .row img{
   margin-top: 10px;
   margin-bottom: 10px;

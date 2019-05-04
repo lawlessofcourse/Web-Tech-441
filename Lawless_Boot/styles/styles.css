@@ -22,7 +22,14 @@ body{
 .col-centered{
   margin: 0 auto;
 }
+#bin{
+  height: 100vh;
+  margin: auto;
+  width: 90vh;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(122, 0, 198,0.4));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
 .nav{
   display: block;
   margin: auto;
@@ -30,10 +37,28 @@ body{
 .navbar-right{
   padding-top: 2em;
 }
+h1{
+
+font-family: 'VT323', monospace;
+color: white;
+font-size: 70px;
+
+}
+h2, h3{
+  font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+p{
+    font-family: 'Roboto Mono', monospace;
+
+  color: white;
+}
 .hero{
+  height: 70vh;
   max-width: 1920px;
   max-height: 1080px;
   min-height: 480px;
+
   margin: auto;
   background:radial-gradient(rgba(0, 4, 92, 0.5), rgba(49, 0, 79, 0.5)), url("../imgs/LV/LAWLESS_VISUALS.gif");
   background-position: center;
